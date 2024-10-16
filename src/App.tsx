@@ -14,7 +14,7 @@ function App() {
     const storedColumns = localStorage.getItem("visibleColumns");
     return storedColumns
       ? JSON.parse(storedColumns)
-      : ["name", "id", "picture"];
+      : ["name", "id"];
   });
 
   const containerRef = useRef<HTMLDivElement>(null);
